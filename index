@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel One</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Reset and base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Fixed Header styling */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #f2f0f3,#ab6acc, hwb(218 2% 15%));
+            color: white;
+            text-align: center;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .header img {
+            height: 80px;
+            width: auto;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            margin: 0;
+            flex: 1;
+        }
+
+        .header p {
+            font-size: 1em;
+            flex: 2;
+        }
+
+        /* Banner styling */
+        .banner {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Changed to gradient */
+            color: white; /* Adjusted text color for contrast */
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+            margin-top: 140px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        /* Form container styling */
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 640px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1em;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus {
+            outline: none;
+            border-color: #6a11cb;
+            box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #2575fc, #6a11cb);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .header img {
+                height: 60px;
+            }
+
+            .header h1 {
+                font-size: 1.2em;
+            }
+
+            .header p {
+                font-size: 0.9em;
+            }
+
+            .banner {
+                font-size: 1em;
+                margin-top: 160px;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            input[type="submit"] {
+                font-size: 1em;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header h1 {
+                font-size: 1em;
+            }
+
+            .header p,
+            .banner {
+                font-size: 0.8em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            input[type="submit"] {
+                font-size: 0.9em;
+                padding: 12px;
+            }
+
+            .form-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Header -->
+    <div class="header">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGrtLADLxOgBWvF9vh9aifmPrlfdU_TTR4WTrQQDi5-MzrQDJ87P21oGla1mmTXlDjx8vPekYS9h3oeWGaoe3PbXMmLopVRTUFz3tfXXJ5bem7OUG4dbBxIK8lLGOL2O9SHcG_LLU9kbkZqe1LhTCqsqHWrrx4Ucl9IcKvOo6g6pVLXFonhLhvENN9rR9u/s16000/Angel-One-logo-removebg-preview.png" alt="Logo" />
+        <div>
+            <h1>Angel One Authorized Person</h1>
+            <p>Your #1 Destination for Stock Investment</p>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <p class="banner">
+        Open Free Demat Account On AngelOne<br />
+        Open Now 
+    </p>
+
+    <!-- Embedding Google Form -->
+    <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeCLS08z_tBmFJWBe-u8iHNyR4g4VLe29yKZX1TSMKfs7buzA/viewform?embedded=true" width="100%" height="591" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <script>
+        var load = 0;
+
+        document.getElementById('gform').onload = function(){
+            /*Execute on every reload on iFrame*/
+            load++;
+            if(load > 1){
+                /*Second reload is a submit*/
+                document.location = "https://angel-one.onelink.me/Wjgr/tcqk4jqa";
+            }
+        }
+    </script>
+  
+</script>
+</body>
+</html>
